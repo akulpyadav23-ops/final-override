@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400" width="1440" height="400">
+  <defs>
+    <linearGradient id="herobg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030813"/>
+      <stop offset="50%" stop-color="#08142c"/>
+      <stop offset="100%" stop-color="#030813"/>
+    </linearGradient>
+    <linearGradient id="trace" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4f8f" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#27b4ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffb81f" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="400" fill="url(#herobg)"/>
+  <!-- Circuit traces -->
+  <g stroke="url(#trace)" stroke-width="2" fill="none">
+    <path d="M0,80 H300 L350,130 H600 L650,80 H1000 L1050,130 H1440"/>
+    <path d="M0,200 H200 L250,250 H550 L600,200 H850 L900,250 H1200 L1250,200 H1440"/>
+    <path d="M0,320 H400 L450,270 H750 L800,320 H1100 L1150,270 H1440"/>
+    <circle cx="350" cy="130" r="4" fill="#27b4ff"/>
+    <circle cx="650" cy="80" r="4" fill="#ffb81f"/>
+    <circle cx="250" cy="250" r="4" fill="#34d399"/>
+    <circle cx="900" cy="250" r="4" fill="#27b4ff"/>
+    <circle cx="450" cy="270" r="4" fill="#ffb81f"/>
+  </g>
+</svg>

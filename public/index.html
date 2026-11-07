@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="FINAL OVERRIDE - Timed Escape-Room Style Tech Challenge by Invictors Club, VVCE Mysuru" />
+  <title>FINAL OVERRIDE — Invictors Club</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <!-- Site Header (All Pages) -->
+  <header class="site-header">
+    <div class="header-container">
+      <img src="/assets/logo.jpg" alt="Invictors Club Logo" class="club-logo" onerror="this.src='/assets/logo.svg'" />
+      <h1 class="site-title">FINAL OVERRIDE</h1>
+      <p class="site-tagline">INVICTORS CLUB PRESENTS · Decode. Innovate. Overcome.</p>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="portal-nav-bar" aria-label="Portal Navigation">
+    <a href="/" class="portal-nav-link" id="nav-link-game">🎮 Mission Portal</a>
+    <a href="/leaderboard" class="portal-nav-link" id="nav-link-leaderboard">🏆 Live Leaderboard</a>
+    <a href="/admin" class="portal-nav-link" id="nav-link-admin">⚡ Organiser & Coordinator Portal</a>
+  </nav>
+
+  <!-- Sticky Status Bar & Progress Rail (Visible while playing) -->
+  <aside id="sticky-status-bar" class="sticky-status-bar" style="display: none;" aria-label="Mission Status">
+    <div class="status-bar-inner">
+      <div class="status-group">
+        <div class="status-item">
+          <span class="status-label">Team:</span>
+          <span id="status-team-name" class="status-value">-</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Coord:</span>
+          <span id="status-coord-name" class="status-value">-</span>
+        </div>
+      </div>
+      <div class="status-group">
+        <div class="status-item">
+          <span class="status-label">Live Time:</span>
+          <span id="status-time-display" class="status-time">00:00</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Penalty:</span>
+          <span id="status-penalty" class="status-penalty">+0m</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Shimmer Progress Bar -->
+    <div class="stage-progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      <div id="stage-progress-fill" class="stage-progress-fill" style="width: 0%;"></div>
+    </div>
+
+    <!-- 6-step Rail -->
+    <nav class="stage-rail" aria-label="Mission Steps">
+      <div class="rail-step">🎧 1</div>
+      <div class="rail-step">🔓 2</div>
+      <div class="rail-step">🤖 3</div>
+      <div class="rail-step">🚩 4</div>
+      <div class="rail-step">🤝 5</div>
+      <div class="rail-step">🧩 6</div>
+    </nav>
+  </aside>
+
+  <!-- Main View Container -->
+  <main id="app-main" class="main-wrapper" role="main">
+    <div class="card" style="text-align: center; padding: 40px 20px;">
+      <p style="color: var(--muted); font-size: 1.1rem;">Initializing mission protocols...</p>
+    </div>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Site Footer (All Pages) -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Invictors Club · VVCE Computer Science & Engineering</p>
+      <div class="footer-links">
+        <a href="https://instagram.com/theinvictors.vvce" target="_blank" rel="noopener noreferrer">Instagram: @theinvictors.vvce</a>
+        <a href="mailto:invictorsofficial@gmail.com">invictorsofficial@gmail.com</a>
+        <a href="https://invictors-vvce.vercel.app/" target="_blank" rel="noopener noreferrer">invictors-vvce.vercel.app</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/audio.js"></script>
+  <script src="/js/decoder.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

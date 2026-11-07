@@ -1,0 +1,25 @@
+{
+  "name": "final-override",
+  "version": "1.0.0",
+  "description": "FINAL OVERRIDE - Escape Room Tech Challenge for Invictors Club",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "test": "node server/tests/acceptance.test.js"
+  },
+  "keywords": [
+    "final-override",
+    "invictors",
+    "tech-challenge",
+    "escape-room"
+  ],
+  "author": "Invictors Club",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0"
+  }
+}
